@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Homepage</title>
+    <style>
+        body{
+            display: flex;
+            position: absolute;
+            background-color: #1c1c1c;
+            margin: 0%;
+            padding: 0%;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .left{
+            display: flex;
+            float: left;
+            background-color: #353434;
+            border-radius: 20px;
+            margin: 0%;
+            padding: 0%;
+            width: 50%;
+            height: 100vh;
+            box-shadow: 0 5px 15px;
+        }
+        .container{
+            display: flex;
+            position: fixed;
+            top: 80px;
+            left: 225px;
+            z-index: 1000;
+            margin-top: 50px;
+        }
+        img{
+            border-radius: 50%;
+            align-items: center;
+            object-fit: cover;
+            width: 120px;
+            height: 120px;
+            border: 4px;
+            box-shadow: 0 4px 12px; 
+            transition: 1s ease-in-out;
+        }
+        img:hover{
+            scale: 1.2;
+        }
+        h1{
+            font-size: 60px;
+            margin: 0%;
+            font-family: 'Segoe UI', sans-serif;
+            color: #060606;
+
+        }
+        h2{
+            text-align: center;
+            margin-top: 0px;
+            color: rgb(75, 75, 75);
+            font-weight: 800;
+            font-size: 30px;
+        }
+        ol{
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #6a6868;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 20px;
+            margin-right: 300px;
+            font-weight: 800;
+        }
+        a{
+            color: #6a6868;
+            margin-right: 100px;
+        }
+        h3{
+            position: fixed;
+            top: 200px;
+            left: 180px;
+            display: block;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <h1>User profile</h1>
+        <div class="container">
+        <img src="https://i.pinimg.com/736x/41/43/7a/41437af7816a26816da7aab958b5f571.jpg">
+        </div>
+        <h3>
+            <ul type="none">
+           <li>Aymen Mubarek</li>
+           <li>NSR/0124/16</li>
+           <li>SE student</li>
+           <li>3rd year</li>
+            </ul>
+        </h3>
+    </div>
+    </div>
+
+        <ol>
+        <h2>My projects:</h2>
+        <li><a href="project1.html">Priject 1</a></li>
+        <li><a href="project2.html">Project 2</a></li>
+        <li><a href="project3.html">Project 3</a></li>
+        </ol>
+    
+</body>
+</html>
