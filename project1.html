@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project a</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+        }
+        .left {
+            float: left;
+            background-color: rgb(48, 1, 1);
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .right {
+            float: left;
+            background-color: chocolate;
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .choice {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        img {
+            max-width: 80%;
+            max-height: 80%;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: width 1s, height 1s;
+        }
+        img:hover {
+            width: 400px;
+            height: 400px;
+        }
+        ul {
+            top: 0;
+            left: 0;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Flavor 1</a></li>
+        <li><a href="#">Flavor 2</a></li>
+    </ul>
+    <div class="left">
+        <div class="choice">
+            <img src="https://imgs.search.brave.com/I0LZ3riCaahSvc5EXYKSSCNmwyibZ3KRWwG-SfwnZCc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODkz/NTI4OTU0L3Bob3Rv/L2Nob2NvbGF0ZS1i/YWNrZ3JvdW5kLWNo/b2NvbGF0ZS1iYXIt/aW4taG90LW1lbHRl/ZC1jaG9jb2xhdGUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXhkakt3anM5elFJ/Y1p2NGREdFowSEk2/dHZiZ0Y3UV85WHdt/UFF5UFRzakk9" alt="chocolate">
+            </div>
+    </div>
+    </div>
+    <div class="right">
+        <div class="choice">
+            <img src="https://imgs.search.brave.com/Wd1k6Cm7tymq6Xjteuksv6N4DkQSpagDD4YIuOUC5vM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jYXNjYWRpbmct/bWVsdGVkLWNhcmFt/ZWwtc3dlZXQtbW90/aW9uXzg5MzU3MS00/NTU4OS5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQwJnE9ODA" alt="caramel">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project b</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .col {
+            height: 100vh;
+            width: 33.33%;
+            float: left;
+        }
+        .left { background-image: url(https://i.pinimg.com/1200x/90/3c/8a/903c8a2e311937e885e1316150fccb82.jpg);
+                background-size: cover;
+                background-position: center;
+                justify-content: center;
+                transition: filter 1s ease;
+                cursor: pointer;
+            }
+            .left:hover {
+                filter: blur(40px);
+            }
+        .center { background-image: url(https://i.pinimg.com/736x/9b/67/3d/9b673d9dcb54d7af51aa4951e9c7e7cf.jpg);
+                background-size: cover;
+                background-position: center;
+                justify-content: center;
+                transition: filter 1s ease;
+                cursor: pointer;
+            }
+            .center:hover {
+                filter: blur(40px);
+            }
+        .right { background-image: url(https://i.pinimg.com/736x/78/79/28/7879283345482dae0693037e961fd9d9.jpg); 
+                background-size: cover;
+                background-position: center;
+                align-items: center;
+                transition: filter 1s ease;
+                cursor: pointer;
+            }
+            .right:hover {
+                filter: blur(40px);
+            }
+            li{
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: 800;
+            font-size: 20px;
+            padding: 5px;
+        }
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">anime 1</a></li>
+        <li><a href="#">anime 2</a></li>
+        <li><a href="#">anime 3</a></li>
+    </ul>
+    <div class="col left"></div>
+    <div class="col center"></div>
+    <div class="col right"></div>
+</body>
+</html>
