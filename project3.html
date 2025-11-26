@@ -3,117 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project 3</title>
+    <title>Project3</title>
     <style>
+        :root {
+            --color-dark: #1E1E1E; 
+            --color-gold: #FFD700;
+            --color-accent-dark: #3A3A3A;
+            --color-light-text: #F0F0F0;
+        }
+
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
-            width: 100%;
-            background-color: black;
-            position: relative;
+            font-family: 'Georgia', serif;
+            background-color: var(--color-dark);
+            min-height: 100vh;
+            color: var(--color-light-text);
         }
-        .top{
-            clear: both;
-            width:100%;
-            height:25vh;
-            background: linear-gradient(180deg,#2b0f2f,#42102b);
-            display:flex;align-items:center;justify-content:center;
+        .content-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.05); 
+            border-radius: 4px;
+            padding: 20px;
+            max-width: 100%;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+            height: 50vh; 
         }
-
-        .top-left{
-            float:left;
-            width:25%;
-            height:50vh;
-            background: linear-gradient(180deg,#3b1850,#612a8a);
-            transition: none;
-            display:flex;align-items:center;justify-content:center;
-        }
-
-        .top-center{
-            float:left;
-            width:50%;
-            height:50vh;
-            background: linear-gradient(180deg,#1f3b6b,#346ab0);
-            transition: none;
-            display:flex;align-items:center;justify-content:center;
-        }
-
-        .top-right{
-            float:right;
-            width:25%;
-            height:50vh;
-            background: linear-gradient(180deg,#0f6b57,#1fb38f);
-            transition: none;
-            display:flex;align-items:center;justify-content:center;
-        }
-
-        .bottom{
-            clear: both;
-            width:100%;
-            height:25vh;
-            background: linear-gradient(180deg,#6b2b0f,#c66b18);
-            display:flex;align-items:center;justify-content:center;
-        }
-        .inner{
-            background: rgba(255,255,255,0.06);
-            border-radius:10px;
-            padding:12px 14px;
-            max-width:70%;
-            margin:12px auto;
-            color:#fff;
-            box-shadow:0 8px 18px rgba(0,0,0,0.45);
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content:center;
-            min-height:50%;
-        }
-        .bottom .inner{
-            height: 80%;
-        }
-        .inner h2{margin:0 0 8px}
-        .inner p{margin:0;color:rgba(255,255,255,0.9);line-height:1.5;text-align:center}
-        .menu{list-style:none;margin:10px;padding:10px;display:flex;gap:12px}
-        .menu button{background:transparent;border:1px solid rgba(255,255,255,0.08);color:#fff;padding:6px 10px;border-radius:6px;cursor:pointer;font-weight:700}
         h1 {
-            color: chocolate;
-            text-align: center;
-            padding-top: 30px;
+            color: var(--color-gold);
+            font-size: 3.8rem;
             margin: 0;
-            font-size: 80px;
+            text-shadow: 1px 1px 0px var(--color-dark);
+            letter-spacing: 2px;
         }
-        .top-left h2, .top-left p,
-        .top-center h2, .top-center p,
-        .top-right h2, .top-right p{
-            color:#fff;
-            font-size:20px;
-            padding:10px;text-align:center;font-weight:700;opacity:1;width:90%;z-index:2
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.6rem;
+            color: var(--color-gold);
+            font-weight: 700;
         }
-        .bottom h3, .bottom p {
-            color: rgb(53, 1, 1);
-            font-size: 20px;
-            padding: 10px;
-            text-align: center;
-            transform: translate(-50,-50);
-            font-weight: bold;
+
+        p {
+            margin: 5px 0 0;
+            line-height: 1.6;
+            color: var(--color-light-text);
         }
-        li{display:inline-block;margin-right:15px;font-weight:800;font-size:20px}
+        .main-menu {
+            list-style: none;
+            margin: 0;
+            padding: 15px 10px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background-color: var(--color-accent-dark);
+            border-bottom: 2px solid var(--color-gold);
+            clear: both;
+        }
+
+        .main-menu li a {
+            color: var(--color-gold);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .top-header, .bottom-footer {
+            width: 100%;
+            height: 25vh;
+            clear: both; 
+        }
+
+        .top-left {
+            width: 25%;
+            float: left; 
+        }
+
+        .top-center {
+            width: 50%;
+            float: left; 
+        }
+
+        .top-right {
+            width: 25%;
+            float: right;
+        }
+        .top-header, .bottom-footer {
+            height: 25vh;
+        }
+        .top-left, .top-center, .top-right {
+            height: 50vh;
+        }
+        .top-header {
+            background: linear-gradient(0deg, #3A3A3A, #555555);
+        }
+
+        .top-left {
+            background: linear-gradient(135deg, #2A2A2A, #3A3A3A);
+        }
+
+        .top-center {
+            background: linear-gradient(135deg, #1E1E1E, #2A2A2A);
+        }
+
+        .top-right {
+            background: linear-gradient(135deg, #2A2A2A, #3A3A3A);
+        }
+
+        .bottom-footer {
+            background: linear-gradient(180deg, #3A3A3A, #555555);
+        }
+        @media (max-width: 768px) {
+            .top-left, .top-center, .top-right {
+                float: none;
+                width: 100%;
+                height: 30vh; 
+            }
+            .top-left { clear: both; }
+
+            .top-header, .bottom-footer {
+                height: 25vh;
+            }
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.3rem; }
+            .main-menu { flex-direction: column; gap: 8px; }
+        }
     </style>
 </head>
 <body>
-    <ul>
+    <ul class="main-menu">
         <li><a href="#">Heading</a></li>
-        <li><a href="#">Html</a></li>
-        <li><a href="#">Java script</a></li>
-        <li><a href="#">Css</a></li>
-        <li><a href="#">conclusion</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Conclusion</a></li>
     </ul>
-    <div class="top"><div class="inner"><H1>Web Development</H1></div></div>
-    <div class="top-left"><div class="inner"><h2>HTML</h2><P> is the standard language used to create and structure content on the web.</P></div></div>
-    <div class="top-right"><div class="inner"><h2>CSS</h2><p>is a style sheet language used to specify the presentation and styling of a document written in a markup language such as HTML or XML</p></div></div>
-    <div class="top-center"><div class="inner"><h2>JAVA SCRIPT</h2><P>is a high-level, dynamically typed, and multi-paradigm programming language that is a core technology of the web alongside HTML and CSS.</P></div></div>
-    <div class="bottom"><div class="inner"><h3>In general</h3><p><b>Web development </b>is the process of designing, building, and maintaining websites and web applications that run on the internet or an intranet
-        using the following programming languages.</p></div></div>
+
+    <div class="top-header content-box">
+        <div class="inner-content">
+            <h1>WEB DEVELOPMENT</h1>
+        </div>
+    </div>
+
+    <div class="top-left content-box">
+        <div class="inner-content">
+            <h2>HTML</h2>
+            <p>Provides the structure and foundation of the web page content.</p>
+        </div>
+    </div>
+
+    <div class="top-center content-box">
+        <div class="inner-content">
+            <h2>JAVASCRIPT</h2>
+            <p>Handles the behavior and interactive logic of the user interface.</p>
+        </div>
+    </div>
+
+    <div class="top-right content-box">
+        <div class="inner-content">
+            <h2>CSS</h2>
+            <p>Defines the presentation and visual styling of the overall document.</p>
+        </div>
+    </div>
+
+    <div class="bottom-footer content-box">
+        <div class="inner-content">
+            <h2>PROJECT CONCLUSION</h2>
+            <p>The core technologies combine to build robust and interactive digital experiences.</p>
+        </div>
+    </div>
 </body>
 </html>
